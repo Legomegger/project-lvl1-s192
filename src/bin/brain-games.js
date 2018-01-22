@@ -1,2 +1,2 @@
 #! /usr/local/bin/node
-console.log(`Welcome to the Brain Games!`);
+import greeting from '../index.js';
