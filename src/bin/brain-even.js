@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-console.log('lul');
+import game from '..';
+
+
+game();
