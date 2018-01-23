@@ -29,7 +29,8 @@
     "url": "https://github.com/Legomegger/project-lvl1-s192/issues"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
