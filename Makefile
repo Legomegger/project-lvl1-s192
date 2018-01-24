@@ -5,7 +5,9 @@ start brain-games:
 start brain-even:
 	npm run babel-node -- src/bin/brain-even.js
 start brain-calc:
-		npm run babel-node -- src/bin/brain-calc.js
+	npm run babel-node -- src/bin/brain-calc.js
+start brain-calc:
+	npm run babel-node -- src/bin/brain-gcd.js
 publish:
 	npm publish
 lint:
