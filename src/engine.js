@@ -5,6 +5,7 @@ const gameLogic = (rules, game) => {
   console.log('Welcome to The Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${playerName}!`);
+  console.log(`${rules}`);
   const roundsToWin = 3;
   const rounds = (counter) => {
     if (counter === roundsToWin) {

@@ -24,6 +24,5 @@ const game = () => {
   const question = `${firstOperand} ${operator} ${secondOperand}`;
   return cons(question, String(correctAnswer));
 };
-export default game;
-
 engine(rules, game);
+export default game;
