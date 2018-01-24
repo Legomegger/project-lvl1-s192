@@ -16,5 +16,4 @@ const game = () => {
   const correctAnswer = findGcd(firstNumber, secondNumber);
   return cons(question, String(correctAnswer));
 };
-engine(rules, game);
-export default game;
+export default () => engine(rules, game);

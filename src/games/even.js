@@ -8,5 +8,5 @@ const game = () => {
   const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
   return cons(question, correctAnswer);
 };
-engine(rules, game);
-export default game;
+
+export default () => engine(rules, game);
