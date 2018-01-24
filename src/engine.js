@@ -8,7 +8,7 @@ const gameLogic = (rules, game) => {
   const roundsToWin = 3;
   const rounds = (counter) => {
     if (counter === roundsToWin) {
-      return console.log('You win!');
+      return console.log(`Congratulations ${playerName}. You win!`);
     }
     const logic = game();
     const question = car(logic);

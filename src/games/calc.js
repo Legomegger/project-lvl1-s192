@@ -6,7 +6,7 @@ const game = () => {
   const randomNumberGenerator = () => Math.floor(Math.random() * (21 - 1));
   const firstOperand = randomNumberGenerator();
   const secondOperand = randomNumberGenerator();
-  const operatorGenerator = Math.floor(Math.random() * (3 - 1));
+  const operatorGenerator = Math.floor(Math.random() * (3));
   let operator = '';
   let correctAnswer;
   if (operatorGenerator === 0) {
@@ -21,7 +21,7 @@ const game = () => {
     operator = '*';
     correctAnswer = firstOperand * secondOperand;
   }
-  const question = `${firstOperand}${operator}${secondOperand}`;
+  const question = `${firstOperand} ${operator} ${secondOperand}`;
   return cons(question, String(correctAnswer));
 };
 export default game;
