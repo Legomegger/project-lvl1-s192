@@ -1,7 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import engine from '../engine';
+import engine from '..';
 
 const rules = 'Answer "yes" if number even otherwise answer "no".';
+
 const game = () => {
   const randomNumberGenerator = () => Math.floor(Math.random() * (21 - 1));
   const question = randomNumberGenerator();

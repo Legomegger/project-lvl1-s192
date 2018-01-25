@@ -1,7 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import engine from '../engine';
+import engine from '..';
 
 const rules = "What's the result of the expression?";
+
 const game = () => {
   const randomNumberGenerator = () => Math.floor(Math.random() * (21 - 1));
   const firstOperand = randomNumberGenerator();
