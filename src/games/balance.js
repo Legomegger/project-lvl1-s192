@@ -9,18 +9,12 @@ const game = () => {
     const workingNumber = String(n).split('').map(Number);
     const high = Math.max.apply(null, workingNumber);
     const low = Math.min.apply(null, workingNumber);
-    const isBalanced = (a, b) => {
-      if (a - b <= 1) {
-        return true;
-      }
-      return false;
-    };
-    if (isBalanced(high, low) === true) {
-      return workingNumber.sort((min, max) => min - max).join('');
+    if (high - low > 1) {
+      workingNumber[workingNumber.indexOf(high)] -= 1;
+      workingNumber[workingNumber.indexOf(low)] += 1;
+      return balance(workingNumber.join(''));
     }
-    workingNumber[workingNumber.indexOf(high)] -= 1;
-    workingNumber[workingNumber.indexOf(low)] += 1;
-    return balance(workingNumber.join(''));
+    return workingNumber.sort((min, max) => min - max).join('');
   };
   const correctAnswer = balance(question);
   return cons(question, String(correctAnswer));
