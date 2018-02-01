@@ -6,9 +6,9 @@
 npm install -g coolcatbraingames
 
 # How to play
-brain-even
-brain-prime
-brain-progression
-brain-balance
-brain-calc
-brain-gcd
+brain-even  
+brain-prime  
+brain-progression  
+brain-balance  
+brain-calc  
+brain-gcd  
